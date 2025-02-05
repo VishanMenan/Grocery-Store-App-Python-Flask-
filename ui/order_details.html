@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Order Details</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,300,600,700">
+        <link media="all" type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+        <link media="all" type="text/css" rel="stylesheet" href="css/style.css?v=1.0">
+        <link media="all" type="text/css" rel="stylesheet" href="css/custom.css?v=1.3.3">
+        <style>
+            .table th, .table td {
+                text-align: center;
+                vertical-align: middle;
+            }
+            .order-info {
+                text-align: left;
+                margin-bottom: 20px;
+            }
+        </style>
+    </head>
+    
+    <body class="tooltips">
+        <div class="container">
+            <div class="header content rows-content-header">
+                <button class="button-menu-mobile show-sidebar">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <div class="navbar navbar-default" role="navigation">
+                    <div class="container">
+                        <div class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav visible-lg visible-md limit-chars">
+                                <ul class="breadcrumb">
+                                    <a href="index.html">
+                                        <i class="zmdi zmdi-view-dashboard zmdi-hc-fw" title="Dashboard"></i>
+                                    </a>
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right content-page">
+                <div class="body content rows scroll-y">
+                    <div class="box-info full" id="taskFormContainer">
+                        <h2>Order Details</h2>
+                        <div class="panel-body pt-0">
+                            <div id="orderInfo" class="order-info">
+                                <!-- Order information will be loaded here -->
+                            </div>
+                            <table id="orderDetailsTable" class="table table-bordered">
+                                <thead>
+                                    <th>Product Name</th>
+                                    <th>Quantity</th>
+                                    <th>Total Price(RM)</th>
+                                </thead>
+                                <tbody>
+                                    <!-- Order details will be loaded here -->
+                                </tbody>
+                                <tfoot>
+                                    <!-- Grand total will be loaded here -->
+                                </tfoot>
+                            </table>
+                            <button id="backButton" class="btn btn-sm btn-primary">Back</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/packages/jquery.min.js"></script>
+        <script src="js/custom/common.js"></script>
+        <script src="js/custom/order_details.js"></script>
+    </body>
+</html>
